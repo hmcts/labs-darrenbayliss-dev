@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Labs-darrenbayliss-dev"
+  description: Deploying a Java application
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_Labs/labs-darrenbayliss-dev
+    github.com/project-slug: 'hmcts/labs-darrenbayliss-dev'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=cloud-native
+      title: cloud-native on Slack
+      icon: chat
+spec:
+  type: service
+  system: Labs
+  lifecycle: experimental
+  owner: dts_cft_developers

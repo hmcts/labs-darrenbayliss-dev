@@ -1,0 +1,6 @@
+java:
+  applicationPort: 8080
+  image: 'hmctspublic.azurecr.io/Labs/darrenbayliss-dev:latest'
+  ingressHost: Labs-darrenbayliss-dev-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
+  aadIdentityName: Labs
+  environment:
